@@ -25,6 +25,7 @@ class GameScene: SKScene {
         guard let n = spinnyNode.copy() as? SKShapeNode else { return }
         print("touch down")
         n.position = pos
+        n.lineWidth = 20
         n.strokeColor = SKColor.green
         addChild(n)
     }
